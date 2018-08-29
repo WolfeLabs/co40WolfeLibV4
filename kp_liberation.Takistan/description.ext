@@ -9,7 +9,7 @@ allowFunctionsLog = 0;
 briefingName = $STR_MISSION_TITLE;
 overviewText = "www.killahpotatoes.de";
 overviewPicture = "res\lib.paa";
-author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
+author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, WolfeLabs";
 onLoadName = $STR_MISSION_TITLE;
 onLoadMission = "www.killahpotatoes.de";
 loadScreen = "res\lib.paa";
@@ -26,8 +26,16 @@ class CfgDebriefing
 	class End1
 	{
 		title =	$STR_SORRY;
-		subtitle = "";
+		subtitle = "Have a talk with Wolfe about it.";
 		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+	
+	class End2
+	{
+		title =	$STR_SORRY;
+		subtitle = "Have a talk with Wolfe about it.";
+		description = $STR_NOT_AUTHORIZED;
 		pictureBackground = "";
 	};
 };
