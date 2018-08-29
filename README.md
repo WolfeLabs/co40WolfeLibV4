@@ -1,3 +1,9 @@
+# Readme:
+
+## WolfeLabs
+WolfeLabs has branched KP's development, and forks off of it regularly. Below is their readme.
+
+
 ![KP Liberation](https://www.killahpotatoes.de/images/arma/liberation.png)
 
 # KP Liberation for ArmA 3
