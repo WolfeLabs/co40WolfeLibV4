@@ -1,13 +1,13 @@
 
 
 interragator = objNull
-_damage = (TARGET getHitPointDamage HITPOINT) + NEW_DAMAGE;
+_damage = (cursorTarget getHitPointDamage HITPOINT) + NEW_DAMAGE;
 
 
 switch (t_action) do {
 	case "punch_face": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
-			[TARGET, "head", _damage, interragator, "punch", -1] call ace_medical_fnc_handleDamage;
+			[cursorTarget, "head", _damage, interragator, "punch", -1] call ace_medical_fnc_handleDamage;
 	 	}else{
 
 		 };
@@ -15,7 +15,7 @@ switch (t_action) do {
 	
 	case "pull_nails": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
-			[TARGET, "arm_r", _damage, interragator, "ropeburn", -1] call ace_medical_fnc_handleDamage;	
+			[cursorTarget, "arm_r", _damage, interragator, "ropeburn", -1] call ace_medical_fnc_handleDamage;	
 		}else{
 			
 		};
@@ -23,7 +23,7 @@ switch (t_action) do {
 
 	case "punch_gut": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
-			[TARGET, "body", _damage, interragator, "punch", -1] call ace_medical_fnc_handleDamage;
+			[cursorTarget, "body", _damage, interragator, "punch", -1] call ace_medical_fnc_handleDamage;
 		}else{
 
 		};
@@ -31,14 +31,14 @@ switch (t_action) do {
 	
 	case "stab_leg": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
-			[TARGET, "leg_r", _damage, interragator, "stab", -1] call ace_medical_fnc_handleDamage;
+			[cursorTarget, "leg_r", _damage, interragator, "stab", -1] call ace_medical_fnc_handleDamage;
 		}else{
 
 		};
 	};
 	case "stab_hand": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
-			[TARGET, "arm_l", _damage, interragator, "stab", -1] call ace_medical_fnc_handleDamage;
+			[cursorTarget, "arm_l", _damage, interragator, "stab", -1] call ace_medical_fnc_handleDamage;
 		}else{
 
 		};
