@@ -4,3 +4,9 @@
 #Arma 3 PBO
 .PBO
 
+
+*.ebo
+
+*.bak
+
+*.pbo
