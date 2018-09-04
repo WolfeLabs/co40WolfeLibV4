@@ -1,4 +1,12 @@
+/*
+Script PlaceHolder
+Author: ZwinkaDink
 
+this script handles the interragation of the prissoner and reward the points
+ according to process used to get the information
+
+ thinking the interragation point need to get to 1k to get the full 30 points of intel points
+*/
 
 _interragator = objNull;
 _damage = (cursorTarget getHitPointDamage HITPOINT) + NEW_DAMAGE;
@@ -6,8 +14,12 @@ _victim = cursorTarget;
 _ipoints = 0;
 _iadder = 0;
 _intelpoints = 0;
+/*
+_Ipoints = floor (random [600,800,1000]); // floor makes the returned num a whole num, non decimal.
 
+hint format ["Value of Information is : %1",_Ipoints];
 
+*/
 
 switch (t_action) do {
 	case "punch_face": {
@@ -16,7 +28,7 @@ switch (t_action) do {
 	 	
 		 
 		 }else{
-
+			_victim setHitPointDamage ["hitHead", _damage];
 		 };
 	 };
 	
@@ -26,7 +38,7 @@ switch (t_action) do {
 		
 		
 		}else{
-			
+			_victim setHitPointDamage ["hitHands", _damage];
 		};
 	};
 
@@ -36,7 +48,7 @@ switch (t_action) do {
 		
 		
 		}else{
-
+			_victim setHitPointDamage ["hitBody", _damage];
 		};
 	};
 	
@@ -46,7 +58,7 @@ switch (t_action) do {
 		
 		
 		}else{
-
+			_victim setHitPointDamage ["hitLegs", _damage];
 		};
 	};
 	case "stab_hand": {
@@ -55,7 +67,7 @@ switch (t_action) do {
 		
 		
 		}else{
-
+			_victim setHitPointDamage ["hitHands", _damage];
 		};
 	};
 	
@@ -65,4 +77,3 @@ switch (t_action) do {
 };
 
 		
-Ipoints = floor (random [600,800,1000]); // floor makes the returned num a whole num, non decimal. hint format ["Value of C is : %1",C];
