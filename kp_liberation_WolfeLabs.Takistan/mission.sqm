@@ -4665,12 +4665,13 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						rank="LIEUTENANT";
-						description="Logistics Pilot";
+						rank="MAJOR";
+						name="LogicGuy";
+						description="Logistics Commander";
 						isPlayable=1;
 					};
 					id=467;
-					type="B_Helipilot_F";
+					type="B_officer_F";
 					atlOffset=-0.097595215;
 					class CustomAttributes
 					{

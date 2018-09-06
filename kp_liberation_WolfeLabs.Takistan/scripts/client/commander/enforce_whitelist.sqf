@@ -42,7 +42,13 @@ if ( !isNull _target ) then {
 				_idmatch = true;
 			};
 		};
-		 
+
+		if (player == LogicGuy) then {  // Logic add action so the can only do Logic Stuff.
+			if ( ( getPlayerUID _target) in wolfeLogics ) then {
+				_idmatch = true;
+			};
+		};
+
 		if ( !isNil "wolfeCommanders" ) then { // Full Access, they're trusted.
 			if ( ( getPlayerUID _target ) in wolfeCommanders ) then {
 				_idmatch = true;
