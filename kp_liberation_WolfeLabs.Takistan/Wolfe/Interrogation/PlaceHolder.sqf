@@ -13,26 +13,34 @@ _ipoints = 0;
 _iadder = 0;
 _intelpoints = 0;
 _ipt = 0
-_locpoints = nearestObjects [player, ["house"], 200];;
+_locpoints = nearestObjects [player, ["house"], 25];;
 _Ipoints = floor (random [600,800,1000]); // floor makes the returned num a whole num, non decimal.
 hint format ["Value of Information is : %1",_Ipoints];
 
 
-player getAllHitPointsDamage params ["_one", "_two", "_three"];
-	_this select 3 params ["_H1", "_H2", "_H3","_H4","_H5", "_H6", "_H7", "_H8", "_H9", "_H10", "_H11"];
-	_totaladd = _H1 + _H2 + _H3 + _H4 + _H5 + _H6 + _H7 + _H8 + _H9 + _H10 + _H11;
-	_damage = _totaladd / 11;
+_newDamage = (floor (random [1,5,10])) * 0.01;
 
 
+_cDamage = getAllHitPointsDamage player select 2;
+    _sum=0;
+	{
+		_sum = _sum + _x;
+	} foreach _cDamage;
+	_cdamageAvg= _sum / (count _cDamage);
 
 switch (t_action) do {
 	case "punch_face": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
-			[_victim, "head", _damage, _interragator, "punch", -1] call ace_medical_fnc_handleDamage;
+			_vCurrentDamage =_victim gethitpointdamage "HitHead";
+			_dealDamage =_vCurrentDamage + _newDamage
+			[_victim, "head", _dealDamage, _interragator, "punch", -1] call ace_medical_fnc_handleDamage;
 	 		_intelpoints = _Ipoints * _locpoints; 
 		 
 		 }else{
-			_victim setHitPointDamage ["hitHead", _damage];
+			_vCurrentDamage =_victim gethitpointdamage "HitHead";
+			_dealDamage =_vCurrentDamage + _newDamage
+			_victim setHitPointDamage ["hitHead", _dealDamage];
+			_intelpoints = _Ipoints * _locpoints; 
 		 };
 	 };
 	
@@ -81,3 +89,6 @@ switch (t_action) do {
 };
 
 		
+[["hitface","hitneck","hithead","hitpelvis","hitabdomen","hitdiaphragm","hitchest","hitbody","hitarms","hithands","hitlegs","incapacitated","hitleftarm","hitrightarm","hitleftleg","hitrightleg"],
+["face_hub","neck","head","pelvis","spine1","spine2","spine3","body","arms","hands","legs","body","hand_l","hand_r","leg_l","leg_r"],
+[0,0,0,0,0,0,0,0.0340469,0,0.0594532,0,0,0,0,0,0]]
