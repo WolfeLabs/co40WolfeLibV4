@@ -29,8 +29,7 @@ wolfeMedics = /* Medics */
 		"76561198201126286", //"Mr. D" | Diesel
 		"76561198196194405", //SBG
 		"76561198085828451", //"The Trainee" | Gregg
-		"0", 
-		"0", 
+		"76561198142484281", //McBride
 		"0",
 		"0", 
 		"0"/*DO NOT REMOVE*/
@@ -40,6 +39,7 @@ wolfeEngineers = /* Engineers */
 	[
 		"76561198201126286", //Diesel
 		"76561198053326389", //aNUL | Greg
+		"76561198085828451", //"The Trainee" | Gregg
 		"0", //
 		"0", 
 		"0", 
@@ -50,7 +50,8 @@ wolfeSnipers = /* Snipers (Recon)*/
 	[
 		"76561198201126286", //Diesel
 		"76561197964084490", //NaDell
-		"0", //
+		"76561198079858547 ", //BodyDropper
+		"76561198162551581", //"4" | N8
 		"0", 
 		"0", 
 		"0"/*DO NOT REMOVE*/
@@ -67,6 +68,7 @@ wolfePilots = /* Pilots */
 	
 wolfeCommanders = /* Commanders */
 	[
+		"76561198201126286", //Diesel
 		"0",
 		"0"/*DO NOT REMOVE*/	
 	];
