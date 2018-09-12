@@ -11,8 +11,9 @@ _15minspassed = false;
 _5minspassed = false;
 _60secondspassed = false;
 
-_timeStart = diag_tickTime;
+_timeStartActual = diag_tickTime;
 
+_timeStart = _timeStartActual - adminTimeSet;
 while{true} do
 {
 	_timeSinceStart = diag_tickTime - _timeStart;
