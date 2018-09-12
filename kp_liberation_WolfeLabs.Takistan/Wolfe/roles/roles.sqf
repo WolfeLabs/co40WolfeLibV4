@@ -65,6 +65,16 @@ wolfePilots = /* Pilots */
 		"0", 
 		"0"/*DO NOT REMOVE*/
 	];
+
+wolfeLogics = /* Logic Control */
+	[
+		"76561198201126286", //Diesel
+		"0",
+		"0",
+		"0",
+		"0"/*DO NOT REMOVE*/
+
+	];
 	
 wolfeCommanders = /* Commanders */
 	[

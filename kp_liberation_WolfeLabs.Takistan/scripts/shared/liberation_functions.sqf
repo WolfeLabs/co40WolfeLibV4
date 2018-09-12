@@ -33,6 +33,7 @@ F_objectProtection = compileFinal preprocessFileLineNumbers "scripts\shared\func
 F_isBigtownActive = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_isBigtownActive.sqf";
 F_getUnitPositionId = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getUnitPositionId.sqf";
 F_getCommander = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getCommander.sqf";
+F_getLogic = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getLogic.sqf";
 F_fetchPermission = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_fetchPermission.sqf";
 LARs_fnc_addAllVirtualCargo = compileFinal preprocessFileLineNumbers "scripts\shared\functions\LARs_fnc_addAllVirtualCargo.sqf";
 F_isAdmin = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_isAdmin.sqf";

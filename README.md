@@ -2,7 +2,7 @@
 
 ## WolfeLabs
 WolfeLabs has branched KP's development, and forks off of it regularly. Below is their readme.
-
+ [A3 Launcher Preset](http://liberationmodded.servegame.com/files/lib4.html)
 
 ![KP Liberation](https://www.killahpotatoes.de/images/arma/liberation.png)
 
