@@ -122,14 +122,14 @@ class CfgNotifications {
     };
     class lib_restart_admin : lib_default_notification {
         title = $STR_NOTIFICATION_RESTART_TITLE;
-        description = $STR_NOTIFICATION_RESTART_SECOND;
+        description = $STR_NOTIFICATION_RESTART_ADMIN;
         iconPicture = "res\notif\ui_notif_restart.paa";
         color[] = { 1, 1, 0, 1 };
         sound = "taskCanceled";
     };
     class lib_restart_60_s : lib_default_notification {
         title = $STR_NOTIFICATION_RESTART_TITLE;
-        description = $STR_NOTIFICATION_RESTART_Admin;
+        description = $STR_NOTIFICATION_RESTART_SECOND;
         iconPicture = "res\notif\ui_notif_restart.paa";
         color[] = { 1, 1, 0, 1 };
         sound = "taskCanceled";

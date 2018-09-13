@@ -5835,7 +5835,7 @@
 			<Chinese>伺服器重啟提醒</Chinese>
 			<Portuguese>NOTIFICAÇÃO DE REINÍCIO DO SERVIDOR</Portuguese>
 		</Key>
-		<Key ID="STR_NOTIFICATION_RESTART_Admin">
+		<Key ID="STR_NOTIFICATION_RESTART_ADMIN">
 			<Original>Admin Extended Restart Time</Original>
 		</Key>
 		<Key ID="STR_NOTIFICATION_RESTART_SECOND">
