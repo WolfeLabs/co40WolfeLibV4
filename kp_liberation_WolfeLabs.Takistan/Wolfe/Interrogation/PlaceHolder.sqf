@@ -80,13 +80,22 @@ switch (t_action) do {
 		
 		}else{
 			_victim setHitPointDamage ["hitBody", _dealDamage];
+			if _locCurrent then {
+				_ipt = _ipt + _ipointLoc;
+			 }else {
+				_ipt = _ipt + _ipoints;
+			 }; 
 		};
 	};
 	
 	case "stab_leg": {
 		if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
 			[_victim, "leg_r", _dealDamage, _interragator, "stab", -1] call ace_medical_fnc_handleDamage;
-		
+			if _locCurrent then {
+				_ipt = _ipt + _ipointLoc;
+			 }else {
+				_ipt = _ipt + _ipoints;
+			 }; 
 		
 		}else{
 			_victim setHitPointDamage ["hitLegs", _dealDamage];
