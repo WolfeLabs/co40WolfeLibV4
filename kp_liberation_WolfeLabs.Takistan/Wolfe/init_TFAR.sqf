@@ -8,3 +8,7 @@ tf_civ_radio_code =  tf_west_radio_code;
 
 tf_radio_channel_name = "The Operators Operational Operating Room";
 tf_radio_channel_password = "13245";
+
+//Ayy my dude, here's some radio stuff, man.
+waitUntil (alive player);
+	[] spawn compile preprocessFileLineNumbers "Wolfe/radio/setRadioFreq.sqf";
