@@ -31,7 +31,11 @@ wolfeMedics = /* Medics */
 		"76561198085828451", //"The Trainee" | Gregg
 		"76561198142484281", //McBride
 		"76561197964084490", //NaDell
-		"0", 
+		//21st
+		"76561197995683487", //Recker
+		"76561198101164068", //Vurtex
+		"76561198124260122", //Slamm
+		"0",
 		"0"/*DO NOT REMOVE*/
 	];
 	
@@ -41,6 +45,10 @@ wolfeEngineers = /* Engineers */
 		"76561198053326389", //aNUL | Greg
 		"76561198085828451", //"The Trainee" | Gregg
 		"76561197964084490", //NaDell
+		//21st
+		"76561197995683487", //Recker
+		"76561198101164068", //Vurtex
+		"76561198124260122", //Slamm
 		"0", 
 		"0", 
 		"0"/*DO NOT REMOVE*/
@@ -52,6 +60,10 @@ wolfeSnipers = /* Snipers (Recon)*/
 		"76561197964084490", //NaDell
 		"76561198079858547 ", //BodyDropper
 		"76561198162551581", //"4" | N8
+		//21st
+		"76561197995683487", //Recker
+		"76561198101164068", //Vurtex
+		"76561198124260122", //Slamm
 		"0", 
 		"0", 
 		"0"/*DO NOT REMOVE*/
@@ -60,10 +72,25 @@ wolfeSnipers = /* Snipers (Recon)*/
 wolfePilots = /* Pilots */ 
 	[
 		"76561198053326389", //aNUL | Greg
+		//21st
+		"76561197995683487", //Recker
+		"76561198101164068", //Vurtex
+		"76561198124260122", //Slamm
 		"0", //
 		"0", 
 		"0", 
 		"0"/*DO NOT REMOVE*/
+	];
+
+wolfeLogics = /* Logic Control */
+	[
+		"76561198201126286", //Diesel
+		"76561198196194405", //SBG
+		"0",
+		"0",
+		"0",
+		"0"/*DO NOT REMOVE*/
+
 	];
 	
 wolfeCommanders = /* Commanders */
