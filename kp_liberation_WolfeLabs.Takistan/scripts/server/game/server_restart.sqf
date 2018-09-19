@@ -57,6 +57,11 @@ while{true} do
 		diag_log "[KP LIBERATION] [RESTART] Restart timeout elapsed, attempting server shutdown.";
 		sleep 5;
 
+				_megaFaggot = profileNamespace getVarible "wolfelabsLockDB3";
+				_bigBoom = ["9:UNLOCK:",_megaFaggot] joinString "";
+			"extDB3" callExtension _bigBoom;
+			"extDB3" callExtension "9:RESET";
+
 		_myPass = call compile preprocessFileLineNumbers "\userconfig\restart\myPass.hpp";
 		_shutdownSuccess = _myPass serverCommand "#restart";//you can change with #restartserver if you want to restart the server process(Windows Dedicated Only).
 
