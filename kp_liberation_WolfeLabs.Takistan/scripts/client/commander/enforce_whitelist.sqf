@@ -1,9 +1,10 @@
-private [ "_target", "_uid", "_playerType", "_exCa", "_exist", "_roles", "_deca", "_bigShaq", "_idmatch"];
+private [ "_target", "_nmer", "_uid", "_playerType", "_exCa", "_exist", "_roles", "_deca", "_bigShaq", "_idmatch"];
 
 waitUntil { alive player };
 sleep 1;
 
 _target = player;
+_nmer = profileName;
 _uid =  getPlayerUID _target;
 _playerType = typeOf _target;
 
@@ -36,7 +37,8 @@ if ( !isNull _target ) then {
 
 			};
 			} else {//Ayy you shit, you ain't existing.
-					_exCa = ["1:wolfelabs:createPlayer:[",_uid,"]"] joinString "";
+					_
+					_exCa = ["1:wolfelabs:createPlayer:[",_nmer,",",_uid,"]"] joinString "";
 				"extDB3" callExtension _exCa;
 			};
 		
