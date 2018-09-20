@@ -9,4 +9,5 @@ WOLFE_Roles_Medic = false;
 WOLFE_Roles_Eng = false;
 WOLFE_Roles_Sniper = false;
 WOLFE_Roles_Pilot = false;
+WOLFE_Roles_Logi = false;
 WOLFE_Roles_Commander = false;
