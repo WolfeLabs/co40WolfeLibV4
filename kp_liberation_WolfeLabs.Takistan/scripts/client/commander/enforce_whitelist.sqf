@@ -46,42 +46,49 @@ if ( !isNull _target ) then {
 
 			if ( _admin ) then { //Full Access, no typeOf checks.
 				_idmatch = true;
+				WOLFE_Roles_Admin = true;
 			};
 		
 		
 		if ( _playerType == "B_medic_F" ) then {
 			if ( _med ) then {
 				_idmatch = true;
+				WOLFE_Roles_Medic = true;
 			};
 		};
 
 		if ( _playerType == "B_engineer_F" ) then {
 			if ( _eng ) then {
 				_idmatch = true;
+				WOLFE_Roles_Eng = true;
 			};
 		};
 		
 		if ( _playerType == "B_recon_F" ) then {
 			if ( _snip ) then {
 				_idmatch = true;
+				WOLFE_Roles_Sniper = true;
 			};
 		};
 		
 		if ( _playerType == "B_Helipilot_F" ) then {
 			if ( _pil ) then {
 				_idmatch = true;
+				WOLFE_Roles_Pilot = true;
 			};
 		};
 
 		if ( _playerType == "somethingLogistical" ) then { 
 			if ( _logi ) then {
 				_idmatch = true;
+				WOLFE_Roles_Logi = true;
 			};
 		};
 		
 		if ( _playerType == "B_Officer_F" ) then { 
 			if ( _com ) then { 
 					_idmatch = true;
+					WOLFE_Roles_Commander = true;
 			};
 		};
 
